@@ -17,6 +17,22 @@ Route::get('/', function () {
     return view('login');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/my-travels', function () {
+    return view('my-travels');
+});
+
+Route::get('/travels', function () {
+    return view('travels');
+});
+
+Route::get('/travels', function () {
+    return view('travels');
+});
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
         return view('home');
