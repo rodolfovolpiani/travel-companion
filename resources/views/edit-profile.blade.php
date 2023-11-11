@@ -3,7 +3,7 @@
 @section('content')
 <div class="profile-container">
     <h2>Editar Perfil</h2>
-    <form method="POST" action="{{ route('profile.update') }}">
+    <form method="POST">
         @csrf
         @method('PUT')
         <!-- Campos de edição do perfil aqui -->

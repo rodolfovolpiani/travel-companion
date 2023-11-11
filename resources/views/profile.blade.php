@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('content')
-<div class="profile-container">
+<div class="profile-container"">
     <h2>Meu Perfil</h2>
-    <!-- Exibir informações do perfil aqui -->
+    <a class="btn btn-primary" href="/edit-profile" role="button">Editar</a>
 </div>
 @endsection
