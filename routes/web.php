@@ -25,10 +25,6 @@ Route::get('/edit-profile', function () {
     return view('edit-profile');
 });
 
-Route::get('/travels', function () {
-    return view('travels');
-});
-
 Route::get('/register', function () {
     return view('register');
 });
@@ -45,11 +41,12 @@ Route::get('/travels', function () {
     return view('travels');
 });
 
-Route::get('/travels', function () {
-    return view('travels');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::middleware(['auth'])->group(function () {
+
+/*Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
         return view('home');
     })->name('home');
@@ -57,4 +54,4 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-});
+});*/
