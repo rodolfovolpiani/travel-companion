@@ -16,6 +16,6 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
-        "mdb-ui-kit": "^6.4.2"
+        
     }
 }
