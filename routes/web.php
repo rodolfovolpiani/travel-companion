@@ -33,6 +33,11 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+Route::get('/my-profile', function () {
+    return view('my-profile');
+});
+
+
 Route::get('/my-travels', function () {
     return view('my-travels');
 });

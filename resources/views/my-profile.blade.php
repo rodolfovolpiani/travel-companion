@@ -3,15 +3,15 @@
 @section('content')
 <div class="profile-container">
     <br>
-    <h2>Perfil</h2>
+    <h2>Meu Perfil</h2>
 
     <br><br>
     <p>João Pedro</p>
     <p>18 anos</p>
     <hr>
 
-    <p>j**************@gmail.com</p>
-    <p>+551*********</p>
+    <p>joaopedroexample@gmail.com</p>
+    <p>+5519988888888</p>
     <hr>
 
     <div class="form-group">
@@ -37,5 +37,7 @@
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
     <br>
+
+    <a class="btn btn-primary" href="/edit-profile" role="button">Editar</a>
 </div>
 @endsection

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>TravelCompany</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('images/bag.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                TravelCompany
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" width="220" height="28" class="d-inline-block align-text-top">
             </a>
 
             
@@ -28,7 +27,8 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/">Página Inicial</a></li>
-                        <li><a class="dropdown-item" href="/profile">Meu Perfil</a></li>
+                        <li><a class="dropdown-item" href="/profile">Perfil</a></li>
+                        <li><a class="dropdown-item" href="/my-profile">Meu Perfil</a></li>
                         <li><a class="dropdown-item" href="/travels">Viagens disponíveis</a></li>
                         <li><a class="dropdown-item" href="/login">Entrar</a></li>
                         <li><a class="dropdown-item" href="/register">Registrar</a></li>
