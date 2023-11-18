@@ -1,115 +1,18 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estilos para os elementos comuns, como formulários e botões */
-form {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Estilos específicos para algumas telas */
-
-/* Tela de Login */
 .login-container {
+    text-align: left;
+    width: 60%;
+    padding-top:10%;
+    padding-left:10%;
+    padding-right:10%;
+    margin-left:25%;
+
+}
+
+.btn-login {
+    width:100%;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+}
+
+.center-content{
     text-align: center;
-    margin: 0 auto;
-    width: 300px;
 }
-
-/* Tela de Perfil e Edição de Perfil */
-.profile-container {
-    text-align: center;
-    margin: 0 auto;
-    width: 400px;
-}
-
-/* Tela de Busca de Itens */
-.items-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.item-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    width: calc(50% - 20px); /* Para 2 cartões por linha */
-}
-
-/* Tela de Criação de Item */
-.create-item-container {
-    text-align: center;
-    margin: 0 auto;
-    width: 400px;
-}
-
-/* Estilos da barra de navegação */
-.navbar {
-    background-color: #007bff; /* Cor de fundo da barra de navegação */
-    color: #fff; /* Cor do texto na barra de navegação */
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style: none; /* Remove marcadores de lista */
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Alinha o texto ao centro */
-}
-
-.navbar ul li {
-    display: inline; /* Exibe os itens de navegação em linha */
-    margin-right: 20px; /* Espaçamento entre os itens */
-}
-
-.navbar a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: #fff; /* Cor do texto dos links na barra de navegação */
-    font-weight: bold; /* Texto em negrito */
-    font-size: 16px; /* Tamanho da fonte */
-}
-
-.navbar a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-

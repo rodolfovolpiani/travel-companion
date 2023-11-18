@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="items-container">
+<div class="items-container" action="{{ route('my-travels') }}">
     <h2>Meus Itens</h2>
     <div class="item-card">Meu Item 1</div>
     <div class="item-card">Meu Item 2</div>

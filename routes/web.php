@@ -14,10 +14,44 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/edit-profile', function () {
+    return view('edit-profile');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/my-profile', function () {
+    return view('my-profile');
+});
+
+
+Route::get('/my-travels', function () {
+    return view('my-travels');
+});
+
+Route::get('/travels', function () {
+    return view('travels');
+});
+
+Route::get('/login', function () {
     return view('login');
 });
 
-Route::middleware(['auth'])->group(function () {
+
+/*Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
         return view('home');
     })->name('home');
@@ -25,14 +59,4 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-});
-
-
-// Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-// Route::get('/profile', 'ProfileController@index')->name('profile');
-// Route::get('/profile/edit', 'ProfileController@edit')->name('profile.edit');
-// Route::put('/profile/update', 'ProfileController@update')->name('profile.update');
-// Route::get('/items', 'ItemController@index')->name('items.index');
-// Route::get('/items/create', 'ItemController@create')->name('item.create');
-// Route::post('/items', 'ItemController@store')->name('item.store');
-// Route::get('/my-items', 'ItemController@myItems')->name('item.myItems');
+});*/
