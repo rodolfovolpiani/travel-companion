@@ -1,6 +1,18 @@
 .login-container {
-    text-align: center;
+    text-align: left;
     width: 60%;
     padding-top:10%;
-    margin-left:20%;
+    padding-left:10%;
+    padding-right:10%;
+    margin-left:25%;
+
+}
+
+.btn-login {
+    width:100%;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+}
+
+.center-content{
+    text-align: center;
 }
