@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\User;
+
 class UserController extends Controller
 {
     /**
@@ -45,15 +47,14 @@ class UserController extends Controller
 
         // Criação do novo usuário com os dados validados
         $user = User::create([
-            'name' => $validatedData['name'],
-            'last_name' => $validatedData['last_name'],
+            'name' => $validatedData['name'] . " " . $validatedData['last_name'],
             'email' => $validatedData['email'],
             'data_nascimento' => $validatedData['data_nascimento'],
             'password' => bcrypt($validatedData['password']),
         ]);
 
         // Redirecionamento para alguma página após a criação do usuário
-        return redirect()->route('my-profile', $user->id)->with('success', 'Usuário criado com sucesso!');
+        return back()->with('success', 'Usuário criado com sucesso!');
     }
 
     /**
