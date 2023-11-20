@@ -34,7 +34,26 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validação dos dados do formulário
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email',
+            'data_nascimento' => 'required|date',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
+        // Criação do novo usuário com os dados validados
+        $user = User::create([
+            'name' => $validatedData['name'],
+            'last_name' => $validatedData['last_name'],
+            'email' => $validatedData['email'],
+            'data_nascimento' => $validatedData['data_nascimento'],
+            'password' => bcrypt($validatedData['password']),
+        ]);
+
+        // Redirecionamento para alguma página após a criação do usuário
+        return redirect()->route('my-profile', $user->id)->with('success', 'Usuário criado com sucesso!');
     }
 
     /**

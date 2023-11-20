@@ -51,12 +51,10 @@ Route::get('/login', function () {
 });
 
 
-/*Route::middleware(['auth'])->group(function () {
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home');
-});
-
-Route::middleware(['guest'])->group(function () {
-    Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-});*/
+// Rotas para ajustes do Usuário.
+Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
+Route::post('/users', [UserController::class, 'store'])->name('user.store');
+Route::get('/users/{id}', [UserController::class, 'show'])->name('user.show');
+Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('user.edit');
+Route::put('/users/{id}', [UserController::class, 'update'])->name('user.update');
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
