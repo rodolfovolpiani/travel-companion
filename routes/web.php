@@ -20,6 +20,19 @@ Route::middleware(['web', 'auth'])->group(function () {
         return view('profile');
     })->name('profile');
 
+    Route::get('/my-profile', function () {
+        return view('my-profile');
+    })->name('my-profile');
+
+    Route::get('/travels', function () {
+        return view('travels');
+    })->name('travels');
+
+    Route::get('/login', function () {
+        return redirect()->route('my-profile');
+    });
+
+
     Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
     Route::post('/users', [UserController::class, 'store'])->name('user.store');
     Route::get('/users/{id}', [UserController::class, 'show'])->name('user.show');
