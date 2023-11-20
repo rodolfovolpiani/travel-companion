@@ -7,42 +7,46 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>TravelCompany</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" width="220" height="28" class="d-inline-block align-text-top">
-            </a>
-
-            
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/">Página Inicial</a></li>
-                        <li><a class="dropdown-item" href="/profile">Perfil</a></li>
-                        <li><a class="dropdown-item" href="/my-profile">Meu Perfil</a></li>
-                        <li><a class="dropdown-item" href="/travels">Viagens disponíveis</a></li>
-                        <li><a class="dropdown-item" href="/login">Entrar</a></li>
-                        <li><a class="dropdown-item" href="/register">Registrar</a></li>
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" width="220" height="28" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profile">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/my-profile">Meu Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/travels">Viagens disponíveis</a>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-
-            <a class="btn btn-outline-success me-2" href="/login" role="button">Entrar</a>
-            <!--<form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>-->
-        </div>
-    </nav>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Registrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
@@ -67,10 +71,14 @@
     </div>
 
     <footer class="navbar-fixed-bottom align-items-center py-3 my-4 border-top"
-            style="text-align: -webkit-center; position: absolute; bottom: 0; width: 100%;">
-        <div class="col-md-4 align-items-center" >
-        <span class="mb-3 mb-md-0 text-muted">© 2023 TravelCompany</span>
+            style="text-align: -webkit-center; bottom: 0; width: 100%;">
+        <div class="col-md-4 align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2023 TravelCompany</span>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

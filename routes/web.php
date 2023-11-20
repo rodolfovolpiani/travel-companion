@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 
-// Rotas sem autenticação
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
@@ -13,19 +12,14 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/login', [App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
 
-// Rotas que requerem autenticação
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/profile', function () {
         return view('profile');
     })->name('profile');
 
-    // ... outras rotas que requerem autenticação
-
-    // Rotas de usuário
     Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
     Route::post('/users', [UserController::class, 'store'])->name('user.store');
     Route::get('/users/{id}', [UserController::class, 'show'])->name('user.show');
@@ -34,7 +28,6 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
 });
 
-// Middleware para redirecionar para a página de registro se o usuário não estiver logado
 Route::middleware(['guest'])->group(function () {
     Route::get('/{any}', function () {
         return redirect()->route('login')->with('error', 'Você não está logado.');
