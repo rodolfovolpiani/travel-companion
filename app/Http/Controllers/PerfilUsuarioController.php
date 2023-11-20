@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ViagemController extends Controller
+class PerfilUsuarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ViagemController extends Controller
      */
     public function index()
     {
-        //    
+        //
     }
 
     /**
