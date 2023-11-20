@@ -13,7 +13,7 @@ Route::get('/register', function () {
 })->name('register');
 
 Route::get('/login', [App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login'])->name('login.submit');
 
 Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/profile', function () {
@@ -28,10 +28,7 @@ Route::middleware(['web', 'auth'])->group(function () {
         return view('travels');
     })->name('travels');
 
-    Route::get('/login', function () {
-        return redirect()->route('my-profile');
-    });
-
+    Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
     Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
     Route::post('/users', [UserController::class, 'store'])->name('user.store');
@@ -43,6 +40,6 @@ Route::middleware(['web', 'auth'])->group(function () {
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/{any}', function () {
-        return redirect()->route('login')->with('error', 'Você não está logado.');
+        return abort(404); // Redirecionar para uma página de erro 404 ou página inicial
     })->where('any', '.*');
 });

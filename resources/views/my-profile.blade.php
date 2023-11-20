@@ -2,16 +2,20 @@
 
 @section('content')
 <div class="profile-container">
+
     <br>
     <h2>Meu Perfil</h2>
 
     <br><br>
-    <p>João Pedro</p>
-    <p>18 anos</p>
+    <p>{{auth()->user()->name}}</p>
+    @php
+        $dataNascimento = auth()->user()->data_nascimento;
+        $idade = date_diff(date_create($dataNascimento), date_create('now'))->y;
+    @endphp
+    <p>{{ $idade }} anos</p>
     <hr>
 
-    <p>joaopedroexample@gmail.com</p>
-    <p>+5519988888888</p>
+    <p>{{auth()->user()->email}}</p>
     <hr>
 
     <div class="form-group">
