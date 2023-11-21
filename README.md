@@ -32,10 +32,6 @@ Para rodar o sistema:
 - Descrição: Bootstrap é um framework front-end que simplifica o desenvolvimento web responsivo e a criação de interfaces de usuário. Ele fornece componentes predefinidos, estilos e scripts JavaScript para facilitar o desenvolvimento.
 - Utilização: Design responsivo de páginas web, criação rápida de protótipos, desenvolvimento de interfaces de usuário consistentes.
 
-**Portable Network Graphic (PNG):**
-- Descrição: PNG é um formato de arquivo de imagem raster que suporta transparência e compressão sem perda. Ele é frequentemente usado na web para imagens que exigem qualidade semelhante à de um JPEG, mas com suporte a transparência.
-- Utilização: Gráficos na web, ícones, logotipos e outras imagens que requerem qualidade e suporte a transparência.
-
 **Blade:**
 - Descrição: Blade é o mecanismo de templates usado pelo Laravel. Ele fornece uma sintaxe leve e concisa para escrever templates de views em PHP.
 - Utilização: Blade templates são compilados em código PHP puro e oferecem recursos como herança de templates, controle de fluxo e inclusão de sub-views.
