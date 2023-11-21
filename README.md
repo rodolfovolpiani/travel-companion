@@ -1,4 +1,4 @@
-Para rodar o sistema:
+## Para rodar o sistema:
 
 1 - Clone o repositório do Github;
 
