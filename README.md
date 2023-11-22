@@ -34,7 +34,7 @@
 
 **Blade:**
 - Descrição: Blade é o mecanismo de templates usado pelo Laravel. Ele fornece uma sintaxe leve e concisa para escrever templates de views em PHP.
-- Utilização: Blade templates são compilados em código PHP puro e oferecem recursos como herança de templates, controle de fluxo e inclusão de sub-views.
+- Utilização: Blade templates são compilados em código PHP puro e oferecem recursos como herança de templates, controle de fluxo e inclusão de sub-views. 
 
 ## Links ##
 
