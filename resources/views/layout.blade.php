@@ -34,13 +34,13 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav-link">|</span>
-                        </li>
                         @auth
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">{{auth()->user()->name}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">|</span>
+                            </li>
                             <li class="nav-item">
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
@@ -48,6 +48,12 @@
                                 </form>
                             </li>
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">|</span>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/register">Registrar</a>
                             </li>
