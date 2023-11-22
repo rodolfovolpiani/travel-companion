@@ -4,7 +4,8 @@
 
 2. Copie o arquivo na pasta raiz ".env.example" e renomeie para ".env";
 
-3. Em um sistema de gerenciamento de banco de dados, crie um banco local chamado "laravel-pim";
+3. Em um sistema de gerenciamento de banco de dados (ex: Dbeaver), crie um banco local chamado "laravel-pim";
+    3.1 Tipo: MySQL - charset: utf8 - collation: utf8_unicode_ci 
 
 4. Rode o comando "composer install" para instalar as dependencias do php;
 
