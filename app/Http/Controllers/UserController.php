@@ -54,7 +54,7 @@ class UserController extends Controller
         ]);
 
         // Redirecionamento para alguma página após a criação do usuário
-        return back()->with('success', 'Usuário criado com sucesso!');
+        return back();
     }
 
     /**

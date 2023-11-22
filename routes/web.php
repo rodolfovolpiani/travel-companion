@@ -12,6 +12,8 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
+Route::post('/users', [UserController::class, 'store'])->name('user.store');
+
 Route::get('/login', [App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [App\Http\Controllers\AuthController::class, 'login'])->name('login.submit');
 
@@ -31,7 +33,6 @@ Route::middleware(['web', 'auth'])->group(function () {
     Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
     Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
-    Route::post('/users', [UserController::class, 'store'])->name('user.store');
     Route::get('/users/{id}', [UserController::class, 'show'])->name('user.show');
     Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('user.edit');
     Route::put('/users/{id}', [UserController::class, 'update'])->name('user.update');
