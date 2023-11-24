@@ -1,3 +1,36 @@
+# Sobre o projeto:
+
+Objetivo:
+Desenvolver uma funcionalidade básica do aplicativo Travel Company, que permite aos usuários compartilhar informações sobre viagens e organizar grupos para viagens.
+
+Passos da Prova de Conceito:
+
+Cadastro de Usuário:
+
+Implementar um sistema de cadastro de usuários.
+
+Perfil do Usuário:
+
+Criar páginas de perfil do usuário que exibam suas viagens passadas, interesses de futuras viagens e informações do usuário.
+
+Aprimoramento de UX/UI:
+
+Realizar melhorias básicas na interface do usuário para garantir uma experiência amigável e intuitiva.
+
+Essa prova de conceito visa validar a viabilidade da ideia central do Travel Company, permitindo que os usuários compartilhem informações sobre seu peril de viagens e organizem grupos para viajar. A implementação dessas funcionalidades básicas fornecerá insights valiosos sobre a usabilidade e aceitação do conceito pelos usuários.
+
+# Grupo 33
+
+# Integrantes
+
+Mikael Colombo Isaac
+Fabio Elyseu Junior
+Pedro Henrique Gatti Barboza
+Macksuel Jose de Carvalho
+Wagner Kazuhiko Kumagai
+Gabriela Rodrigues Leme
+Rodolfo Volpiani
+
 # Para rodar o sistema:
 
 1. Clone o repositório do Github;
@@ -35,7 +68,7 @@
 
 **Blade:**
 - Descrição: Blade é o mecanismo de templates usado pelo Laravel. Ele fornece uma sintaxe leve e concisa para escrever templates de views em PHP.
-- Utilização: Blade templates são compilados em código PHP puro e oferecem recursos como herança de templates, controle de fluxo e inclusão de sub-views.
+- Utilização: Blade templates são compilados em código PHP puro e oferecem recursos como herança de templates, controle de fluxo e inclusão de sub-views. 
 
 ## Links ##
 
@@ -43,4 +76,3 @@
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Bootstrap](https://getbootstrap.com)
 - [Blade](https://laravel.com/docs/8.x/blade)
-
