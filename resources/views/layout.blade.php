@@ -32,6 +32,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/travels">Viagens disponíveis</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/create-travel">Cadastrar viagem</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav">
                         @auth

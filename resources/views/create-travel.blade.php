@@ -2,15 +2,14 @@
 
 @section('content')
 <div class="create-item-container">
-    <h2>Criar um Novo Item</h2>
+    <h2>Cadastre sua nova viagem</h2>
     <form method="POST" action="{{ route('item.store') }}">
         @csrf
-        <input type="text" name="name" placeholder="Nome" required>
-        <input type="text" name="description" placeholder="Descrição" required>
-        <input type="number" name="price" placeholder="Preço" required>
-        <input type="text" name="category" placeholder="Categoria" required>
-        <input type="number" name="quantity" placeholder="Quantidade" required>
-        <button type="submit">Criar Item</button>
+        <input type="text" name="destiny" placeholder="Destino" required>
+        <input type="date" name="initialDate" placeholder="Data ida" required>
+        <input type="text" name="preference" placeholder="Preferência" required>
+        <input type="date" name="finalDate" placeholder="Data volta" required>
+        <button type="submit">Cadastrar viagem</button>
     </form>
 </div>
 @endsection
