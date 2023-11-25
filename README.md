@@ -52,7 +52,7 @@ Essa prova de conceito visa validar a viabilidade da ideia central do Travel Com
 
 9. Crie uma conta clicando em "register" e posteriormente faça o login para ter acesso ao sistema;
 
-10. Tecnologias específicas usada no projeto:
+10. Tecnologias usadas no projeto:
 
 **PHP Laravel:**
 - Descrição: Laravel é um framework de desenvolvimento web em PHP que segue o padrão arquitetural MVC (Model-View-Controller). Ele fornece uma sintaxe elegante e ferramentas para tarefas comuns, facilitando o desenvolvimento de aplicativos robustos e escaláveis.
