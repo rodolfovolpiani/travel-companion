@@ -23,13 +23,13 @@ Essa prova de conceito visa validar a viabilidade da ideia central do Travel Com
 
 # Integrantes
 
-Mikael Colombo Isaac
-Fabio Elyseu Junior
-Pedro Henrique Gatti Barboza
-Macksuel Jose de Carvalho
-Wagner Kazuhiko Kumagai
-Gabriela Rodrigues Leme
-Rodolfo Volpiani
+- Fabio Elyseu Junior
+- Gabriela Rodrigues Leme
+- Macksuel Jose de Carvalho
+- Mikael Colombo Isaac
+- Pedro Henrique Gatti Barboza
+- Rodolfo Volpiani
+- Wagner Kazuhiko Kumagai
 
 # Para rodar o sistema:
 
