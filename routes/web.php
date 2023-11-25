@@ -30,6 +30,10 @@ Route::middleware(['web', 'auth'])->group(function () {
         return view('travels');
     })->name('travels');
 
+    Route::get('/create-travel', function () {
+        return view('create-travel');
+    })->name('create-travel');
+
     Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
 
     Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
